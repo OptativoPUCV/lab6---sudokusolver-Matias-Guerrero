@@ -64,7 +64,7 @@ int is_valid(Node* n)
     }
   }
 
-  for(i = 0; i < 9; i++)
+  for(i = 0; i < 10; i++)
   {
     numerosValidos[i] = 0;
   }
@@ -84,7 +84,7 @@ int is_valid(Node* n)
     }
   }
 
-  for(i = 0; i < 9; i++)
+  for(i = 0; i < 10; i++)
   {
     numerosValidos[i] = 0;
   }
