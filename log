@@ -49,3 +49,9 @@ sudoku.c:70:7: note: previous definition of 'numerosValidos' was here
        ^~~~~~~~~~~~~~
 Compilation failed
 9ed069f
+mi.,  3 de may. de 2023 15:39:32: 
+ sudoku.c | 4 ----
+ 1 file changed, 4 deletions(-)
+ tests:  2|4
+total_score: 15/70
+8d77460
