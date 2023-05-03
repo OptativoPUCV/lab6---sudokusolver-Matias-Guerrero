@@ -55,3 +55,9 @@ mi.,  3 de may. de 2023 15:39:32:
  tests:  2|4
 total_score: 15/70
 8d77460
+mi.,  3 de may. de 2023 15:42:10: 
+ sudoku.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ tests:  2|4
+total_score: 15/70
+b28481b

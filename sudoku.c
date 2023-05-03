@@ -69,6 +69,11 @@ int is_valid(Node* n)
 
   for(i = 0; i < 9; i++)
   {
+    numerosValidos[i] = 0;
+  }
+
+  for(i = 0; i < 9; i++)
+  {
     for(j = 0; j < 9; j++)
     {
       if(n->sudo[j][i] != 0)
@@ -83,6 +88,11 @@ int is_valid(Node* n)
         }
       }
     }
+  }
+
+  for(i = 0; i < 9; i++)
+  {
+    numerosValidos[i] = 0;
   }
 
   for(i = 1; i < 9; i += 3)
