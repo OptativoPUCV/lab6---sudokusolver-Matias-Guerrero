@@ -85,3 +85,14 @@ mi.,  3 de may. de 2023 15:53:46:
  tests:  2|4
 total_score: 15/70
 487514a
+mi.,  3 de may. de 2023 15:56:25: 
+ sudoku.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:50:11: error: unused variable 'k' [-Werror=unused-variable]
+   int i,j,k;
+           ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+777252d

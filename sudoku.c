@@ -64,7 +64,7 @@ int is_valid(Node* n)
       }
     }
 
-    for(k = 0; k < 10; k++)
+    for(int k = 0; k < 10; k++)
     {
       numerosValidos[k] = 0;
     }
@@ -75,9 +75,9 @@ int is_valid(Node* n)
   {
     for(j = 0; j < 9; j++)
     {
-      if(numerosValidos[n->sudo[i][j]] == 0)
+      if(numerosValidos[n->sudo[j][i]] == 0)
       {
-        numerosValidos[n->sudo[i][j]] = 1;
+        numerosValidos[n->sudo[j][i]] = 1;
       }
       else
       {
@@ -85,7 +85,7 @@ int is_valid(Node* n)
       }
     }
 
-    for(k = 0; k < 10; k++)
+    for(int k = 0; k < 10; k++)
     {
       numerosValidos[k] = 0;
     }
@@ -114,7 +114,7 @@ int is_valid(Node* n)
         }
       }
       
-      for(k = 0; k < 10; k++)
+      for(int k = 0; k < 10; k++)
       {
         numerosValidos[k] = 0;
       }
