@@ -49,6 +49,7 @@ int is_valid(Node* n)
 
   int i,j;
 
+  // Verifica que no haya numeros repetidos en las filas
   for(i = 0; i < 9; i++)
   {
     for(j = 0; j < 9; j++)
@@ -62,13 +63,14 @@ int is_valid(Node* n)
         return 0;
       }
     }
+
+    for(i = 0; i < 10; i++)
+    {
+      numerosValidos[i] = 0;
+    }
   }
 
-  for(i = 0; i < 10; i++)
-  {
-    numerosValidos[i] = 0;
-  }
-
+  // Verifica que no haya numeros repetidos en las columnas
   for(i = 0; i < 9; i++)
   {
     for(j = 0; j < 9; j++)
@@ -82,13 +84,14 @@ int is_valid(Node* n)
         return 0;
       }
     }
+
+    for(i = 0; i < 10; i++)
+    {
+      numerosValidos[i] = 0;
+    }
   }
 
-  for(i = 0; i < 10; i++)
-  {
-    numerosValidos[i] = 0;
-  }
-
+  // Verifica que no haya numeros repetidos en las submatrices
   for(i = 1; i < 9; i += 3)
   {
     for(j = 1; j < 9; j += 3)
@@ -109,6 +112,11 @@ int is_valid(Node* n)
         {
           return 0;
         }
+      }
+
+      for(i = 0; i < 10; i++)
+      {
+        numerosValidos[i] = 0;
       }
     }
   }
