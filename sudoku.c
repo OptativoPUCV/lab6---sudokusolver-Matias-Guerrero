@@ -54,13 +54,18 @@ int is_valid(Node* n)
   {
     for(j = 0; j < 9; j++)
     {
-      if(numerosValidos[n->sudo[i][j]] == 0)
+      int numeroActual = n->sudo[i][j];
+
+      if(numeroActual != 0)
       {
-        numerosValidos[n->sudo[i][j]] = 1;
-      }
-      else
-      {
-        return 0;
+        if(numerosValidos[numeroActual] == 0)
+        {
+          numerosValidos[numeroActual] = 1;
+        }
+        else
+        {
+          return 0;
+        }
       }
     }
 
@@ -75,13 +80,18 @@ int is_valid(Node* n)
   {
     for(j = 0; j < 9; j++)
     {
-      if(numerosValidos[n->sudo[j][i]] == 0)
+      int numeroActual = n->sudo[j][i];
+
+      if(numeroActual != 0)
       {
-        numerosValidos[n->sudo[j][i]] = 1;
-      }
-      else
-      {
-        return 0;
+        if(numerosValidos[numeroActual] == 0)
+        {
+          numerosValidos[numeroActual] = 1;
+        }
+        else
+        {
+          return 0;
+        }
       }
     }
 
@@ -104,13 +114,18 @@ int is_valid(Node* n)
         int x = (k / 3) * 3 + (p / 3);
         int y = (k % 3) * 3 + (p % 3);
 
-        if(numerosValidos[n->sudo[x][y]] == 0)
+        int numeroActual = n->sudo[x][y];
+
+        if(numeroActual != 0)
         {
-          numerosValidos[n->sudo[x][y]] = 1;
-        }
-        else
-        {
-          return 0;
+          if(numerosValidos[numeroActual] == 0)
+          {
+            numerosValidos[numeroActual] = 1;
+          }
+          else
+          {
+            return 0;
+          }
         }
       }
       
