@@ -47,7 +47,7 @@ int is_valid(Node* n)
 {
   int numerosValidos[10] = {0,0,0,0,0,0,0,0,0,0};
 
-  int i,j,k;
+  int i,j;
 
   // Verifica que no haya numeros repetidos en las filas
   for(i = 0; i < 9; i++)
