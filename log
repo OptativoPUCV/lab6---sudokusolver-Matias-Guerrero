@@ -30,3 +30,22 @@ mi.,  3 de may. de 2023  0:13:39:
  tests:  2|4
 total_score: 15/70
 3d4750a
+mi.,  3 de may. de 2023 15:39:00: 
+ sudoku.c | 73 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 72 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:70:7: error: redefinition of 'numerosValidos'
+   int numerosValidos[9] = {0,0,0,0,0,0,0,0,0};
+       ^~~~~~~~~~~~~~
+sudoku.c:48:7: note: previous definition of 'numerosValidos' was here
+   int numerosValidos[9] = {0,0,0,0,0,0,0,0,0};
+       ^~~~~~~~~~~~~~
+sudoku.c:90:7: error: redefinition of 'numerosValidos'
+   int numerosValidos[9] = {0,0,0,0,0,0,0,0,0};
+       ^~~~~~~~~~~~~~
+sudoku.c:70:7: note: previous definition of 'numerosValidos' was here
+   int numerosValidos[9] = {0,0,0,0,0,0,0,0,0};
+       ^~~~~~~~~~~~~~
+Compilation failed
+9ed069f
