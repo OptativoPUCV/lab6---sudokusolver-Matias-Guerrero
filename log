@@ -160,3 +160,9 @@ sudoku.c:240:5: note: previous definition of 'main' was here
      ^~~~
 Compilation failed
 5b15115
+ju.,  4 de may. de 2023 12:24:59: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  10|0
+total_score: 70/70
+15dce91
