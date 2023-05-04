@@ -138,3 +138,15 @@ ju.,  4 de may. de 2023 12:20:38:
  tests:  10|0
 total_score: 70/70
 be7266a
+ju.,  4 de may. de 2023 12:21:55: 
+ sudoku.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+test.c:245:5: error: redefinition of 'main'
+ int main( int argc, char *argv[] ) {
+     ^~~~
+In file included from test.c:5:0:
+sudoku.c:240:5: note: previous definition of 'main' was here
+ int main( int argc, char *argv[] ){
+     ^~~~
+Compilation failed
+54054fd
