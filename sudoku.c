@@ -101,38 +101,34 @@ int is_valid(Node* n)
     }
   }
 
-  // Verifica que no haya numeros repetidos en las submatrices
-  for(i = 1; i < 9; i += 3)
+  // Verifica que no haya numeros repetidos en los cuadrantes
+  for(int k = 0; k < 9; k++)
   {
-    for(j = 1; j < 9; j += 3)
+    int p;
+
+    for(p = 0; p < 9; p++)
     {
-      int k = 3 * (i / 3) + (j / 3);
-      int p;
+      int x = (k / 3) * 3 + (p / 3);
+      int y = (k % 3) * 3 + (p % 3);
 
-      for(p = 0; p < 9; p++)
+      int numeroActual = n->sudo[x][y];
+
+      if(numeroActual != 0)
       {
-        int x = (k / 3) * 3 + (p / 3);
-        int y = (k % 3) * 3 + (p % 3);
-
-        int numeroActual = n->sudo[x][y];
-
-        if(numeroActual != 0)
+        if(numerosValidos[numeroActual] == 0)
         {
-          if(numerosValidos[numeroActual] == 0)
-          {
-            numerosValidos[numeroActual] = 1;
-          }
-          else
-          {
-            return 0;
-          }
+          numerosValidos[numeroActual] = 1;
+        }
+        else
+        {
+          return 0;
         }
       }
-      
-      for(int k = 0; k < 10; k++)
-      {
-        numerosValidos[k] = 0;
-      }
+    }
+
+    for(int k = 0; k < 10; k++)
+    {
+      numerosValidos[k] = 0;
     }
   }
 
